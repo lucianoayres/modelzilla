@@ -1,0 +1,185 @@
+# Modelzilla
+
+## Overview
+
+### Unleashing the Monster Models for your AI Beasts
+
+The **Modelzilla Modelfile Generator** is here to help you craft top-tier Modelfiles for your AI beasts. Whether you're tinkering with an LLM or trying to build the next big thing in AI, Modelzilla makes sure your Modelfiles are as fierce and consistent as possible—while keeping things flexible enough for the quirks of your specific tasks. Compatible with [Ollama](https://github.com/ollama/ollama), it ensures your models are always ready to roar.
+
+## Structure
+
+1. **Objective and Rules**: Defines the purpose of the generator and lays down the requirements to make sure your Modelfiles meet Ollama’s exacting standards—so your AI models can swagger with confidence.
+
+2. **Command Specification**: Lists and describes the essential ingredients for a killer Modelfile, including:
+
+    - **META**: Metadata about the Modelfile, lovingly added as comments.
+    - **FROM**: Specifies the model version (e.g., Llama3.2—like Jurassic Park, but with fewer velociraptors).
+    - **PARAMETER**: Defines settings like creativity level and context length. For all the juicy details, check out the [Ollama Documentation](https://github.com/ollama/ollama/blob/main/docs/modelfile.md#parameter).
+    - **MESSAGE**: Sets initial instructions for the model. Think of it as your AI’s opening roar.
+    - **LICENSE**: Specifies the licensing information—because even monsters need to play by the rules.
+
+3. **Template and Configuration**: The template provides a standard [Modelfile structure](https://github.com/ollama/ollama/blob/main/docs/modelfile.md) with placeholders that adapt to your whims and preferences:
+
+    - **Temperature Parameter**: Adjusted depending on whether you need creativity or cold, calculated responses.
+    - **Objective**: Stated in the `SYSTEM` section to align the assistant’s purpose with the user's goals—so everyone’s on the same beastly page.
+    - **Initial Message**: Gives the model its role and context—kind of like a hype-up speech before the big fight.
+
+4. **User Input Examples**: Guidelines on how to structure input—whether it's a **Problem**, **Task**, or **Goal**—so Modelzilla can create the best possible Modelfile, tailored just for you.
+
+## Base Template
+
+This template provides the standard structure for generating a Modelfile. Placeholders in `<< >>` need to be completed by the LLM or the user. The **User Input** section is where you get to flex your muscles before the LLM takes over.
+
+```plaintext
+You are a Modelfile generator. Your task is to create a Modelfile that defines a smart chat assistant based on the task or problem provided by the user.
+
+- Output only the Modelfile content without explanations.
+- Include the META, FROM, PARAMETER, MESSAGE, and LICENSE commands.
+- Ensure the MESSAGE command is followed by 'assistant' before the message.
+- META content must be marked as a comment.
+- Adjust the 'temperature' parameter based on the task's creativity (1 for creative, 0 for non-creative, or a value between 0 and 1).
+
+Follow this Full Generated Modelfile Structure:
+
+# META_DESCRIPTION
+# << PROVIDE A BRIEF DESCRIPTION OF THE ASSISTANT >>
+# META_CATEGORY
+# << SPECIFY THE CATEGORY OF THE ASSISTANT >>
+# META_KEYWORDS
+# << LIST THE MAIN KEYWORDS ASSOCIATED WITH THE ASSISTANT >>
+
+FROM llama3.2
+
+# Parameters set to optimize response generation
+
+PARAMETER temperature << INSERT TEMPERATURE >>
+PARAMETER num_ctx 2048
+PARAMETER top_p 0.9
+
+# System message tailored to the task
+
+SYSTEM """
+I need you to act as a highly advanced AI assistant, helping users with << TASK SUMMARY >>.
+- Provide brief, actionable assistance, and always ask if more details are needed.
+- Avoid using markdown format.
+"""
+
+MESSAGE assistant << INSERT YOUR INTRODUCTION >>
+
+LICENSE """Creative Commons Attribution 4.0 International (CC BY 4.0) License"""
+
+## User Input
+
+"Problem: << INSERT A PROBLEM HERE (to be filled by the user) >>"
+"Task: << INSERT A TASK HERE (to be filled by the user) >>"
+"Goal: << INSERT A GOAL HERE (to be filled by the user) >>"
+```
+
+## How to Use
+
+1. Pick a user input type (**Problem**, **Task**, or **Goal**) from the [User Input Examples](#user-input-examples).
+2. Drop the statement into the Modelfile Generator template.
+3. Save the **Modelfile Generator prompt template** as a `.txt` file.
+4. Feed the **content** from the `.txt` file into a large language model (LLM) to generate your Modelfile.
+5. Save the **resulting Modelfile** as a plain text file (no specific extension needed), and follow the steps for [Building and Validating Models with Ollama](#add-link).
+
+## User Input Examples
+
+Once you've selected a **Problem**, **Task**, or **Goal**, toss it into the base template to generate your epic Modelfile. Here are some example inputs to get you started:
+
+### Problem Examples
+
+Challenges that need assistance—from pesky little tasks to big hairy problems:
+
+1. **Problem**: Difficulty managing monthly expenses with a freelance income.
+2. **Problem**: Struggling to stay motivated for fitness routines.
+3. **Problem**: Low participation in a workplace wellness program.
+4. **Problem**: Trouble saving for a large purchase due to impulse buying.
+5. **Problem**: Difficulty organizing personal goals like vacations and debt repayment.
+
+### Task Examples
+
+Specific actions you want to smash, one step at a time:
+
+1. **Task**: Creating a personal budget to better manage spending.
+2. **Task**: Developing a 10-week half marathon training schedule.
+3. **Task**: Setting up a meal-prepping routine that fits a budget.
+4. **Task**: Designing a financial literacy course for teenagers.
+5. **Task**: Creating a 20-minute morning fitness routine.
+
+### Goal Examples
+
+Big, ambitious goals—because why settle for small dreams?
+
+1. **Goal**: Save $5,000 over six months by cutting expenses and automating savings.
+2. **Goal**: Improve physical endurance through daily cardio over 90 days.
+3. **Goal**: Reduce energy costs by 15% with eco-friendly practices.
+4. **Goal**: Build a diversified investment portfolio for long-term wealth.
+5. **Goal**: Enhance mental well-being by establishing a daily meditation practice.
+
+## Output Example
+
+Here's what a Modelfile might look like after a spin in the **Modelfile Generator**—this one is designed to help users learn Machine Learning with Python.
+
+```plaintext
+# META_DESCRIPTION
+# This Modelfile defines an AI assistant to help users start learning Machine Learning with Python, providing step-by-step guidance and answering beginner-level questions.
+# META_CATEGORY
+# Machine Learning, Python Programming, Education
+# META_KEYWORDS
+# Python, Machine Learning, Beginner, Learning, AI Education
+
+FROM llama3.2
+
+# Parameters set to optimize response generation
+
+PARAMETER temperature 0.7
+PARAMETER num_ctx 2048
+PARAMETER top_p 0.9
+
+# System message tailored to the task
+
+SYSTEM """
+I need you to act as an AI assistant, helping users who are just starting to learn Machine Learning with Python.
+Your goal is to provide simple, actionable guidance on Machine Learning concepts, Python libraries (e.g., scikit-learn), and basic algorithms.
+Keep explanations beginner-friendly, and always offer additional details if needed.
+Avoid using technical jargon without explanation.
+"""
+
+MESSAGE assistant "Hello! I'm here to help you get started with Machine Learning in Python. Would you like to begin by learning about key concepts or Python libraries like scikit-learn?"
+
+LICENSE """Creative Commons Attribution 4.0 International (CC BY 4.0) License"""
+```
+
+## Building and Validating Models with Ollama
+
+Modelfiles are like blueprints for your AI monsters. Once you’ve saved your creation, you can build a model using Ollama with the following command:
+
+```bash
+ollama create my-custom-model -f ./Custom_Modelfile
+```
+
+To test your brand new monster:
+
+```bash
+ollama run my-custom-model
+```
+
+If any hiccups happen, just double-check the Modelfile syntax and make sure it’s all in order.
+
+## Default Model: Llama3.2 and Other Model Options
+
+By default, the **Modelzilla** uses **Llama3.2**—a beast capable of impressive feats across various tasks, and a favorite for its balance of power and creativity. But the choice is yours:
+
+-   **[Ollama’s Model Library](https://ollama.com/library)**: An endless buffet of models for your every need.
+-   **[GGUF-Quantized Models on Hugging Face](https://huggingface.co/docs/hub/ollama)**: For those with specific tastes and performance needs.
+
+Switch models by simply changing the version in the `FROM` section of the Modelfile. It's your world—Modelzilla just lives in it.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contribution
+
+Contributions are welcome! Please fork the repository and submit a pull request if you'd like to propose any changes.
