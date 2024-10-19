@@ -197,11 +197,17 @@ ollama run my-custom-model
 
 If any hiccups happen, just double-check the Modelfile syntax and make sure it’s all in order.
 
-## Using Nino with Ollama
+## Using Nino with Ollama Models
 
 You can use [**Nino**](https://github.com/lucianoayres/nino-cli) to interact more freely with Ollama models, allowing for enhanced flexibility and a streamlined experience in running language models. Nino interacts smoothly with the Ollama server directly from the command line, without entering interactive mode. With Nino, you can send prompts directly to the models, analyze images, and save outputs easily.
 
-To learn more about **Nino** and how it can simplify your interaction with Ollama models, visit the [Nino CLI repository](https://github.com/lucianoayres/nino-cli).
+### Example Command
+
+Here's an example of using Nino to interact with an Ollama model directly from the command line:
+
+```bash
+nino "Explain the core principles of quantum computing."
+```
 
 ## Default Model
 
