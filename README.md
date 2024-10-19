@@ -4,7 +4,7 @@
 
 ## Unleashing the Monster Models For Your AI Beasts
 
-[What's Modelzilla?](#whats-modelzilla) · [How Does it Work?](#how-does-it-work) · [Why Use Modelzilla?](#why-use-modelzilla) · [Who is it for?](#who-is-it-for) · [Structure](#structure) · [Base Template](#base-template) · [How to Use](#how-to-use) · [User Input Examples](#user-input-examples) · [Output Example](#output-example) · [Using Models with Ollama](#using-models-with-ollama) · [Default Model](#default-model) · [License](#license) · [Contribution](#contribution)
+[What's Modelzilla?](#whats-modelzilla) · [How Does it Work?](#how-does-it-work) · [Why Use Modelzilla?](#why-use-modelzilla) · [Who is it for?](#who-is-it-for) · [Structure](#structure) · [Base Template](#base-template) · [How to Use](#how-to-use) · [User Input Examples](#user-input-examples) · [Output Example](#output-example) · [Using Models with Ollama](#using-models-with-ollama) · [Using Nino with Ollama](using-nino-with-ollama) · [Default Model](#default-model) · [License](#license) · [Contribution](#contribution)
 
 ### What's Modelzilla?
 
@@ -121,6 +121,8 @@ Challenges that need assistance—from pesky little tasks to big hairy problems:
 4. **Problem**: Trouble saving for a large purchase due to impulse buying.
 5. **Problem**: Difficulty organizing personal goals like vacations and debt repayment.
 
+[Modelfile Generator for Problems](./templates/v1/Modelfile_Generator_for_Problems.txt)
+
 ### Task Examples
 
 Specific actions you want to smash, one step at a time:
@@ -131,6 +133,8 @@ Specific actions you want to smash, one step at a time:
 4. **Task**: Designing a financial literacy course for teenagers.
 5. **Task**: Creating a 20-minute morning fitness routine.
 
+[Modelfile Generator for Tasks](./templates/v1/Modelfile_Generator_for_Tasks.txt)
+
 ### Goal Examples
 
 Big, ambitious goals—because why settle for small dreams?
@@ -140,6 +144,8 @@ Big, ambitious goals—because why settle for small dreams?
 3. **Goal**: Reduce energy costs by 15% with eco-friendly practices.
 4. **Goal**: Build a diversified investment portfolio for long-term wealth.
 5. **Goal**: Enhance mental well-being by establishing a daily meditation practice.
+
+[Modelfile Generator for Goals](./templates/v1/Modelfile_Generator_for_Goals.txt)
 
 ## Output Example
 
@@ -190,6 +196,12 @@ ollama run my-custom-model
 ```
 
 If any hiccups happen, just double-check the Modelfile syntax and make sure it’s all in order.
+
+## Using Nino with Ollama
+
+You can use [**Nino**](https://github.com/lucianoayres/nino-cli) to interact more freely with Ollama models, allowing for enhanced flexibility and a streamlined experience in running language models. Nino interacts smoothly with the Ollama server directly from the command line, without entering interactive mode. With Nino, you can send prompts directly to the models, analyze images, and save outputs easily.
+
+To learn more about **Nino** and how it can simplify your interaction with Ollama models, visit the [Nino CLI repository](https://github.com/lucianoayres/nino-cli).
 
 ## Default Model
 
