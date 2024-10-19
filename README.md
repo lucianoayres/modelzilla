@@ -4,7 +4,7 @@
 
 ## Unleashing the Monster Models For Your AI Beasts
 
-[What's Modelzilla?](#whats-modelzilla) · [How Does it Work?](#how-does-it-work) · [Why Use Modelzilla?](#why-use-modelzilla) · [Who is it for?](#who-is-it-for) · [Structure](#structure) · [Base Template](#base-template) · [How to Use](#how-to-use) · [User Input Examples](#user-input-examples) · [Output Example](#output-example) · [Using Models with Ollama](#using-models-with-ollama) · [Using Nino with Ollama](using-nino-with-ollama) · [Default Model](#default-model) · [License](#license) · [Contribution](#contribution)
+[What's Modelzilla?](#whats-modelzilla) · [How Does it Work?](#how-does-it-work) · [Why Use Modelzilla?](#why-use-modelzilla) · [Who is it for?](#who-is-it-for) · [Structure](#structure) · [Base Template](#base-template) · [How to Use](#how-to-use) · [User Input Examples](#user-input-examples) · [Output Example](#output-example) · [Using Models with Ollama](#using-models-with-ollama) · [Using Nino with Ollama](#using-nino-with-ollama) · [Default Model](#default-model) · [License](#license) · [Contribution](#contribution)
 
 ### What's Modelzilla?
 
