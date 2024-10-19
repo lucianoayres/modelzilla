@@ -16,7 +16,7 @@ By feeding the [**Modelzilla prompt**](<(./templates/v1/Modelzilla_Base_Template
 
 ### Why Use Modelzilla?
 
--   🦕 **Speed & Efficiency**: Skip the manual writing process and let the LLM generate a precise Modelfile in seconds.
+-   🦖 **Speed & Efficiency**: Skip the manual writing process and let the LLM generate a precise Modelfile in seconds.
 -   🌊 **Flexibility**: Customize the generated Modelfile based on your specific tasks, problems, or goals.
 -   🏙️ **Compatibility**: Modelzilla is fully compatible with [Ollama](https://github.com/ollama/ollama), ensuring that your Modelfiles work seamlessly with their AI models.
 
