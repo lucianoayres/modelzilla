@@ -1,12 +1,32 @@
 # Modelzilla
 
-## Overview
+![modelzilla-banner](https://github.com/lucianoayres/modelzilla/blob/main/assets/images/banner_modelzilla.png?raw=true)
 
-### Unleashing the Monster Models for your AI Beasts
+## Unleashing the Monster Models For Your AI Beasts
 
-The **Modelzilla Modelfile Generator** is here to help you craft top-tier Modelfiles for your AI beasts. Whether you're tinkering with an LLM or trying to build the next big thing in AI, Modelzilla makes sure your Modelfiles are as fierce and consistent as possible—while keeping things flexible enough for the quirks of your specific tasks. Compatible with [Ollama](https://github.com/ollama/ollama), it ensures your models are always ready to roar.
+[What's Modelzilla?](#whats-modelzilla) · [How Does it Work?](#how-does-it-work) · [Why Use Modelzilla?](#why-use-modelzilla) · [Who is it for?](#who-is-it-for) · [Structure](#structure) · [Base Template](#base-template) · [How to Use](#how-to-use) · [User Input Examples](#user-input-examples) · [Output Example](#output-example) · [Using Models with Ollama](#using-models-with-ollama) · [Default Model](#default-model) · [License](#license) · [Contribution](#contribution)
+
+### What's Modelzilla?
+
+The **Modelzilla Modelfile Generator** is a [_prompt_](./templates/v1/Modelzilla_Base_Template.txt) specifically designed to be used with a large language model (LLM). It helps you create [Modelfiles](https://github.com/ollama/ollama/blob/main/docs/modelfile.md) for your AI models with ease, ensuring they meet the necessary standards and perform optimally.
+
+### How Does It Work?
+
+By feeding the [**Modelzilla prompt**](<(./templates/v1/Modelzilla_Base_Template.txt)>) into an LLM, you can automatically generate a Modelfile without needing to write it from scratch. The prompt includes instructions that guide the LLM to produce a complete Modelfile, tailored to your needs.
+
+### Why Use Modelzilla?
+
+-   🦕 **Speed & Efficiency**: Skip the manual writing process and let the LLM generate a precise Modelfile in seconds.
+-   🌊 **Flexibility**: Customize the generated Modelfile based on your specific tasks, problems, or goals.
+-   🏙️ **Compatibility**: Modelzilla is fully compatible with [Ollama](https://github.com/ollama/ollama), ensuring that your Modelfiles work seamlessly with their AI models.
+
+### Who is it For?
+
+Whether you're an AI enthusiast fine-tuning a model or a developer working on a larger project, **Modelzilla** makes sure your Modelfiles are robust and easy to configure. It's the perfect tool to unleash the full potential of your AI creations.
 
 ## Structure
+
+The Modelzilla Structure streamlines Modelfile creation by organizing key components, making it easy to configure and customize AI models while ensuring compatibility with Ollama.
 
 1. **Objective and Rules**: Defines the purpose of the generator and lays down the requirements to make sure your Modelfiles meet Ollama’s exacting standards—so your AI models can swagger with confidence.
 
@@ -26,9 +46,13 @@ The **Modelzilla Modelfile Generator** is here to help you craft top-tier Modelf
 
 4. **User Input Examples**: Guidelines on how to structure input—whether it's a **Problem**, **Task**, or **Goal**—so Modelzilla can create the best possible Modelfile, tailored just for you.
 
+    - For **Problems**: Use the [Modelfile Generator for Problems](./templates/v1/Modelfile_Generator_for_Problems.txt).
+    - For **Tasks**: Use the [Modelfile Generator for Tasks](./templates/v1/Modelfile_Generator_for_Tasks.txt).
+    - For **Goals**: Use the [Modelfile Generator for Goals](./templates/v1/Modelfile_Generator_for_Goals.txt).
+
 ## Base Template
 
-This template provides the standard structure for generating a Modelfile. Placeholders in `<< >>` need to be completed by the LLM or the user. The **User Input** section is where you get to flex your muscles before the LLM takes over.
+This template provides the standard structure for generating a Modelfile. Placeholders in `<< >>` need to be completed by the LLM or the user. The **User Input** section is where you get to flex your muscles before the LLM takes over. You can find the full template in the [Modelzilla Base Template](./templates/v1/Modelzilla_Base_Template.txt).
 
 ```plaintext
 You are a Modelfile generator. Your task is to create a Modelfile that defines a smart chat assistant based on the task or problem provided by the user.
@@ -81,7 +105,7 @@ LICENSE """Creative Commons Attribution 4.0 International (CC BY 4.0) License"""
 2. Drop the statement into the Modelfile Generator template.
 3. Save the **Modelfile Generator prompt template** as a `.txt` file.
 4. Feed the **content** from the `.txt` file into a large language model (LLM) to generate your Modelfile.
-5. Save the **resulting Modelfile** as a plain text file (no specific extension needed), and follow the steps for [Building and Validating Models with Ollama](#add-link).
+5. Save the **resulting Modelfile** as a plain text file (no specific extension needed), and follow the steps for [Building and Validating Models with Ollama](#building-and-validating-models-with-ollama).
 
 ## User Input Examples
 
@@ -119,7 +143,7 @@ Big, ambitious goals—because why settle for small dreams?
 
 ## Output Example
 
-Here's what a Modelfile might look like after a spin in the **Modelfile Generator**—this one is designed to help users learn Machine Learning with Python.
+Here's what a Modelfile might look like after a spin in the **Modelfile Generator**—this one is designed to help users learn Machine Learning with Python. For a closer look at the full example, you can find the file [here](./modelfiles/Python_Machine_Learning_Assistant).
 
 ```plaintext
 # META_DESCRIPTION
@@ -151,7 +175,7 @@ MESSAGE assistant "Hello! I'm here to help you get started with Machine Learning
 LICENSE """Creative Commons Attribution 4.0 International (CC BY 4.0) License"""
 ```
 
-## Building and Validating Models with Ollama
+## Using Models with Ollama
 
 Modelfiles are like blueprints for your AI monsters. Once you’ve saved your creation, you can build a model using Ollama with the following command:
 
@@ -167,12 +191,14 @@ ollama run my-custom-model
 
 If any hiccups happen, just double-check the Modelfile syntax and make sure it’s all in order.
 
-## Default Model: Llama3.2 and Other Model Options
+## Default Model
 
 By default, the **Modelzilla** uses **Llama3.2**—a beast capable of impressive feats across various tasks, and a favorite for its balance of power and creativity. But the choice is yours:
 
 -   **[Ollama’s Model Library](https://ollama.com/library)**: An endless buffet of models for your every need.
--   **[GGUF-Quantized Models on Hugging Face](https://huggingface.co/docs/hub/ollama)**: For those with specific tastes and performance needs.
+-   \*\*[GGUF-Quantized
+
+Models on Hugging Face](https://huggingface.co/docs/hub/ollama)\*\*: For those with specific tastes and performance needs.
 
 Switch models by simply changing the version in the `FROM` section of the Modelfile. It's your world—Modelzilla just lives in it.
 
