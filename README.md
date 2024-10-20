@@ -10,10 +10,6 @@
 
 The **Modelzilla Modelfile Generator** is a [_prompt_](./templates/v1/Modelzilla_Base_Template.txt) specifically designed to be used with a large language model (LLM). It helps you create [Modelfiles](https://github.com/ollama/ollama/blob/main/docs/modelfile.md) for your AI models with ease, ensuring they meet the necessary standards and perform optimally.
 
-### How Does It Work?
-
-By feeding the [**Modelzilla prompt**](<(./templates/v1/Modelzilla_Base_Template.txt)>) into an LLM, you can automatically generate a Modelfile without needing to write it from scratch. The prompt includes instructions that guide the LLM to produce a complete Modelfile, tailored to your needs.
-
 ### Why Use Modelzilla?
 
 -   🦖 **Speed & Efficiency**: Skip the manual writing process and let the LLM generate a precise Modelfile in seconds.
@@ -25,6 +21,10 @@ By feeding the [**Modelzilla prompt**](<(./templates/v1/Modelzilla_Base_Template
 Generating a custom Modelfile using the Modelzilla prompt with [Nino CLI](https://github.com/lucianoayres/nino-cli):
 
 ![modelfile-generation-screenshot](https://github.com/lucianoayres/modelzilla/blob/main/assets/images/modelfile_generation_screenshot.png?raw=true)
+
+### How Does It Work?
+
+By feeding the [**Modelzilla prompt**](<(./templates/v1/Modelzilla_Base_Template.txt)>) into an LLM, you can automatically generate a Modelfile without needing to write it from scratch. The prompt includes instructions that guide the LLM to produce a complete Modelfile, tailored to your needs.
 
 ### Who is it For?
 
