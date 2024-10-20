@@ -220,9 +220,7 @@ nino "Explain the core principles of quantum computing."
 By default, the **Modelzilla** uses **Llama3.2**—a beast capable of impressive feats across various tasks, and a favorite for its balance of power and creativity. But the choice is yours:
 
 -   **[Ollama’s Model Library](https://ollama.com/library)**: An endless buffet of models for your every need.
--   \*\*[GGUF-Quantized
-
-Models on **[Hugging Face](https://huggingface.co/docs/hub/ollama)**: For those with specific tastes and performance needs.
+-   **[GGUF-Quantized Models on Hugging Face](https://huggingface.co/docs/hub/ollama)**: For those with specific tastes and performance needs.
 
 Switch models by simply changing the version in the `FROM` section of the Modelfile. It's your world—Modelzilla just lives in it.
 
