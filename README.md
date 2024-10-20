@@ -20,6 +20,8 @@ By feeding the [**Modelzilla prompt**](<(./templates/v1/Modelzilla_Base_Template
 -   🌊 **Flexibility**: Customize the generated Modelfile based on your specific tasks, problems, or goals.
 -   🏙️ **Compatibility**: Modelzilla is fully compatible with [Ollama](https://github.com/ollama/ollama), ensuring that your Modelfiles work seamlessly with their AI models.
 
+![modelfile-generation-screenshot](https://github.com/lucianoayres/modelzilla/blob/main/assets/images/modelfile_generation_screenshot.png?raw=true)
+
 ### Who is it For?
 
 Whether you're an AI enthusiast fine-tuning a model or a developer working on a larger project, **Modelzilla** makes sure your Modelfiles are robust and easy to configure. It's the perfect tool to unleash the full potential of your AI creations.
