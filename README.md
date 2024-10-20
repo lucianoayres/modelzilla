@@ -205,7 +205,7 @@ If any hiccups happen, just double-check the Modelfile syntax and make sure itâ€
 
 ## Using Nino with Ollama Models
 
-You can use [**Nino**](https://github.com/lucianoayres/nino-cli) to interact more freely with Ollama models, allowing for enhanced flexibility and a streamlined experience in running language models. Nino interacts smoothly with the Ollama server directly from the command line, without entering interactive mode. With Nino, you can send prompts directly to the models, analyze images, and save outputs easily.
+You can use [**Nino**](https://github.com/lucianoayres/nino-cli) to interact more freely with Ollama models. Nino interacts smoothly with the Ollama server directly from the command line, without entering interactive mode. With Nino, you can send prompts directly to the models, analyze images, and save outputs easily.
 
 ### Example Command
 
