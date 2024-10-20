@@ -8,7 +8,7 @@
 
 ### What's Modelzilla?
 
-The **Modelzilla Modelfile Generator** is a [_prompt_](./templates/v1/Modelzilla_Base_Template.txt) specifically designed to be used with a large language model (LLM) 🤖. It helps you create [Modelfiles](https://github.com/ollama/ollama/blob/main/docs/modelfile.md) for your AI models with ease 🛠️, ensuring they meet the necessary standards and perform optimally 🚀.
+The **Modelzilla Modelfile Generator** is a [_prompt_](./templates/v1/Modelzilla_Base_Template.txt) specifically designed to be used with a large language model (LLM). It helps you create [Modelfiles](https://github.com/ollama/ollama/blob/main/docs/modelfile.md) for your AI models with ease, ensuring they meet the necessary standards and perform optimally 🚀.
 
 ### Why Use Modelzilla?
 
