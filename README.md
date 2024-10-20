@@ -4,7 +4,7 @@
 
 ## Unleashing the Monster Models For Your AI Beasts
 
-[What's Modelzilla?](#whats-modelzilla) · [How Does it Work?](#how-does-it-work) · [Why Use Modelzilla?](#why-use-modelzilla) · [Who is it for?](#who-is-it-for) · [Structure](#structure) · [Base Template](#base-template) · [How to Use](#how-to-use) · [User Input Examples](#user-input-examples) · [Output Example](#output-example) · [Using Models with Ollama](#using-models-with-ollama) · [Using Nino with Ollama](#using-nino-with-ollama) · [Default Model](#default-model) · [License](#license) · [Contribution](#contribution)
+[What's Modelzilla?](#whats-modelzilla) · [How Does it Work?](#how-does-it-work) · [Why Use Modelzilla?](#why-use-modelzilla) · [In Action](#in-action) · [Who is it for?](#who-is-it-for) · [Structure](#structure) · [Base Template](#base-template) · [How to Use](#how-to-use) · [User Input Examples](#user-input-examples) · [Output Example](#output-example) · [Using Models with Ollama](#using-models-with-ollama) · [Using Nino with Ollama](#using-nino-with-ollama) · [Default Model](#default-model) · [License](#license) · [Contribution](#contribution)
 
 ### What's Modelzilla?
 
@@ -19,6 +19,10 @@ By feeding the [**Modelzilla prompt**](<(./templates/v1/Modelzilla_Base_Template
 -   🦖 **Speed & Efficiency**: Skip the manual writing process and let the LLM generate a precise Modelfile in seconds.
 -   🌊 **Flexibility**: Customize the generated Modelfile based on your specific tasks, problems, or goals.
 -   🏙️ **Compatibility**: Modelzilla is fully compatible with [Ollama](https://github.com/ollama/ollama), ensuring that your Modelfiles work seamlessly with their AI models.
+
+## In Action
+
+Generating a custom Modelfile using the Modelzilla prompt with [Nino CLI](https://github.com/lucianoayres/nino-cli):
 
 ![modelfile-generation-screenshot](https://github.com/lucianoayres/modelzilla/blob/main/assets/images/modelfile_generation_screenshot.png?raw=true)
 
