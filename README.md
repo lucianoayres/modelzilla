@@ -24,11 +24,11 @@ Generating a custom Modelfile using the Modelzilla prompt with [Nino CLI](https:
 
 ### How Does It Work? 🧐
 
-By feeding the [**Modelzilla prompt**](./templates/v1/Modelzilla_Base_Template.txt) into an LLM, you can automatically generate a Modelfile without needing to write it from scratch. The prompt includes instructions that guide the LLM to produce a complete Modelfile, tailored to your needs. It's like having a dinosaur write your code for you—minus the tiny arms! 🦖✍️
+By feeding the [**Modelzilla prompt**](./templates/v1/Modelzilla_Base_Template.txt) into an LLM, you can automatically generate a Modelfile without needing to write it from scratch. The prompt includes instructions that guide the LLM to produce a complete Modelfile, tailored to your needs. It's like having a dinosaur write your code for you—minus the tiny arms!
 
 ### Who Is It For? 🎯
 
-Whether you're an AI enthusiast fine-tuning a model or a developer working on a larger project, **Modelzilla** makes sure your Modelfiles are robust and easy to configure. It's the perfect tool to unleash the full potential of your AI creations. Perfect for anyone who wants to build AI models without going extinct! 🦖
+Whether you're an AI enthusiast fine-tuning a model or a developer working on a larger project, **Modelzilla** makes sure your Modelfiles are robust and easy to configure. It's the perfect tool to unleash the full potential of your AI creations. Perfect for anyone who wants to build AI models without going extinct!
 
 ## Structure 🏗️
 
@@ -38,17 +38,17 @@ The Modelzilla Structure streamlines Modelfile creation by organizing key compon
 
 2. **Command Specification** 🍳: Lists and describes the essential ingredients for a killer Modelfile, including:
 
-    - **META** 📝: Metadata about the Modelfile, lovingly added as comments.
-    - **FROM** 🦙: Specifies the model version (e.g., Llama3.2—like Jurassic Park, but with fewer velociraptors).
+    - **META**: Metadata about the Modelfile, lovingly added as comments.
+    - **FROM**: Specifies the model version (e.g., Llama3.2—like Jurassic Park, but with fewer velociraptors).
     - **PARAMETER** ⚙️: Defines settings like creativity level and context length. For all the juicy details, check out the [Ollama Documentation](https://github.com/ollama/ollama/blob/main/docs/modelfile.md#parameter).
-    - **MESSAGE** 📣: Sets initial instructions for the model. Think of it as your AI’s opening roar.
-    - **LICENSE** 📜: Specifies the licensing information—because even monsters need to play by the rules.
+    - **MESSAGE**: Sets initial instructions for the model. Think of it as your AI’s opening roar.
+    - **LICENSE**: Specifies the licensing information—because even monsters need to play by the rules.
 
 3. **Template and Configuration** 🧩: The template provides a standard [Modelfile structure](https://github.com/ollama/ollama/blob/main/docs/modelfile.md) with placeholders that adapt to your whims and preferences:
 
-    - **Temperature Parameter** 🌡️: Adjusted depending on whether you need creativity or cold, calculated responses.
-    - **Objective** 🎯: Stated in the `SYSTEM` section to align the assistant’s purpose with the user's goals—so everyone’s on the same beastly page.
-    - **Initial Message** 🎤: Gives the model its role and context—kind of like a hype-up speech before the big fight.
+    - **Temperature Parameter**: Adjusted depending on whether you need creativity or cold, calculated responses.
+    - **Objective**: Stated in the `SYSTEM` section to align the assistant’s purpose with the user's goals—so everyone’s on the same beastly page.
+    - **Initial Message**: Gives the model its role and context—kind of like a hype-up speech before the big fight.
 
 4. **User Input Examples** 💡: Guidelines on how to structure input—whether it's a **Problem**, **Task**, or **Goal**—so Modelzilla can create the best possible Modelfile, tailored just for you.
 
