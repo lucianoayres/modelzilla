@@ -4,7 +4,7 @@
 
 ## Unleashing Monster Models For Your AI Beasts
 
-[What's Modelzilla? 🦖](#whats-modelzilla) · [Why Use Modelzilla? 🚀](#why-use-modelzilla) · [How Does It Work? ⚙️](#how-does-it-work) · [Who Is It For? 🎯](#who-is-it-for) · [How to Use 🛠️](#how-to-use) · [Using Nino with Ollama 🐶](#using-nino-with-ollama) · [Templates 📄](#templates) · [Examples 📂](#examples) · [License 📄](#license) · [Contribution 🤝](#contribution)
+[What's Modelzilla? 🦖](#whats-modelzilla-) · [Why Use Modelzilla? 🚀](#why-use-modelzilla-) · [How Does It Work? ⚙️](#how-does-it-work-) · [Who Is It For? 🎯](#who-is-it-for-) · [How to Use 🛠️](#how-to-use-) · [Using Nino with Ollama 🐶](#using-nino-with-ollama-) · [Templates 📄](#templates-) · [Examples 📂](#examples-) · [License 📄](#license-) · [Contribution 🤝](#contribution-)
 
 ### What's Modelzilla? 🦖
 
@@ -13,6 +13,7 @@
 ### Why Use Modelzilla? 🚀
 
 -   🦖 **Efficiency**: Automatically generate Modelfiles for custom AI assistants without writing them from scratch.
+-   🎯 **Precision**: By using tasks generated from Octask, you provide clear and focused input, resulting in more effective AI models.
 -   🌊 **Flexibility**: Provide any task or goal, and Modelzilla will create a Modelfile tailored to it.
 -   🏙️ **Compatibility**: Fully compatible with [Ollama](https://github.com/ollama/ollama), ensuring seamless model creation and deployment.
 
@@ -39,56 +40,88 @@ With Modelzilla, you can create AI assistants for virtually any task, making AI 
 
 Follow these steps to use Modelzilla and create your custom AI assistant:
 
-1. **Clone the Repository**:
+### 1. Prepare Your Task
 
-    ```bash
-    git clone https://github.com/lucianoayres/modelzilla.git
-    cd modelzilla
-    ```
+We recommend using [**Octask**](https://github.com/lucianoayres/octask) to generate clear and actionable tasks. Octask can help you define your idea, goal, or problem more precisely, which in turn allows Modelzilla to create a more effective Modelfile.
 
-2. **Ensure Ollama is Installed**:
+#### Example using Octask Express:
 
-    Make sure you have [Ollama](https://github.com/ollama/ollama) installed on your system.
+```bash
+ollama run octask-express1.0
+```
 
-3. **Create the Modelzilla Model**:
+**User Input**:
 
-    ```bash
-    ollama create modelzilla1.0 -f ./modelfiles/Modelzilla1.0
-    ```
+```
+I want to create an AI assistant that helps users learn basic French conversation.
+```
 
-4. **Run Modelzilla**:
+**Octask Output**:
 
-    ```bash
-    ollama run modelzilla1.0
-    ```
+-   Develop an AI model that teaches basic French conversation skills.
+-   Include lessons on common phrases, pronunciation, and cultural tips.
+-   Implement interactive dialogues for practice.
+-   Ensure the assistant adapts to the user's learning pace.
 
-5. **Provide Your Task or Problem**:
+### 2. Clone the Modelzilla Repository
 
-    When prompted, input your specific task, problem, or goal. For example:
+```bash
+git clone https://github.com/lucianoayres/modelzilla.git
+cd modelzilla
+```
 
-    ```
-    Task: Develop a personal blog with Svelte.
-    ```
+### 3. Ensure Ollama is Installed
 
-6. **Save the Generated Modelfile**:
+Make sure you have [Ollama](https://github.com/ollama/ollama) installed on your system.
 
-    Modelzilla will output a Modelfile tailored to your input. Copy this output and save it as a plain text file (e.g., `MyCustomModelfile`). You can optionally use [Nino](#using-nino-with-ollama) to save the Modelfile locally, making it ideal for automated workflows.
+### 4. Create the Modelzilla Model
 
-7. **Create Your Custom AI Model**:
+```bash
+ollama create modelzilla1.0 -f ./modelfiles/Modelzilla1.0
+```
 
-    Use Ollama to create a new model from the generated Modelfile:
+### 5. Run Modelzilla
 
-    ```bash
-    ollama create my-custom-model -f ./MyCustomModelfile
-    ```
+```bash
+ollama run modelzilla1.0
+```
 
-8. **Run Your Custom Model**:
+### 6. Provide Your Task or Problem
 
-    Test your new AI assistant:
+When prompted, input the task you've defined (preferably using Octask). For example:
 
-    ```bash
-    ollama run my-custom-model
-    ```
+```
+Task: Develop an AI assistant that helps users learn basic French conversation, including common phrases, pronunciation, and interactive dialogues.
+```
+
+### 7. Save the Generated Modelfile
+
+Modelzilla will output a Modelfile tailored to your input. Copy this output and save it as a plain text file (e.g., `FrenchTutorModelfile`). You can optionally use [Nino](#using-nino-with-ollama) to save the Modelfile locally, making it ideal for automated workflows.
+
+### 8. Create Your Custom AI Model
+
+Use Ollama to create a new model from the generated Modelfile:
+
+```bash
+ollama create french-tutor -f ./FrenchTutorModelfile
+```
+
+### 9. Run Your Custom Model
+
+Test your new AI assistant:
+
+```bash
+ollama run french-tutor
+```
+
+### 10. Interact with Your AI Assistant
+
+Start learning French!
+
+```
+You: Bonjour! Can you teach me how to order food in a restaurant?
+AI Assistant: Absolutely! Let's start with some common phrases...
+```
 
 If any issues occur, double-check your Modelfile for syntax errors and ensure it's compatible with Ollama.
 
@@ -99,7 +132,7 @@ You can also use [**Nino**](https://github.com/lucianoayres/nino-cli) to interac
 ### Example Command
 
 ```bash
-nino "Explain the core principles of quantum computing." --model my-custom-model --output answer.txt
+nino "Teach me how to greet someone in French." --model french-tutor --output lesson.txt
 ```
 
 ## Templates 📄
@@ -130,9 +163,9 @@ The Modelzilla template streamlines Modelfile creation by organizing key compone
 
 Examples of tasks, problems, or goals that you can provide to Modelzilla are available in the [examples directory](./examples/prompts). These examples can help you understand how to structure your input for optimal results. Here are some sample inputs:
 
--   **Task**: "Develop a personal blog with Svelte."
--   **Problem**: "Difficulty managing monthly expenses with a freelance income."
--   **Goal**: "Save $5,000 over six months by cutting expenses and automating savings."
+-   **Task**: "Develop an AI assistant that helps users practice mindfulness meditation."
+-   **Problem**: "Users find it difficult to stay motivated while learning a new language."
+-   **Goal**: "Create an AI model that provides daily workout routines customized to the user's fitness level."
 
 ### Output Example 🎉
 
