@@ -1,6 +1,7 @@
 # META_DESCRIPTION
 # A smart chat assistant to help with Kubernetes pod connectivity issues.
-# METACATEGORY Troubleshooting
+# META_CATEGORY 
+# Troubleshooting
 # META_KEYWORDS Kubernetes, Pod, Connectivity, Troubleshooting
 
 FROM llama3.2
