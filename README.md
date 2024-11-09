@@ -4,7 +4,7 @@
 
 ## Unleashing Monster Models For Your AI Beasts
 
-[What's Modelzilla? 🦖](#whats-modelzilla-) · [Why Use Modelzilla? 🚀](#why-use-modelzilla-) · [Modes ⚡](#modes-️) · [How Does It Work? ⚙️](#how-does-it-work-) · [Who Is It For? 🎯](#who-is-it-for-) · [How to Use 🛠️](#how-to-use-) · [Using Nino with Ollama 🐶](#using-nino-with-ollama-) · [Templates 📄](#templates-) · [Examples 📂](#examples-) · [License 📄](#license-) · [Contribution 🤝](#contribution-)
+[What's Modelzilla? 🦖](#whats-modelzilla-🦖) · [Why Use Modelzilla? 🚀](#why-use-modelzilla-🚀) · [Modes ⚡](#modes-⚡) · [How Does It Work? ⚙️](#how-does-it-work-⚙️) · [Who Is It For? 🎯](#who-is-it-for-🎯) · [How to Use 🛠️](#how-to-use-🛠️) · [Using Nino with Ollama 🐶](#using-nino-with-ollama-🐶) · [Templates 📄](#templates-📄) · [Examples 📂](#examples-📂) · [License 📄](#license-📄) · [Contribution 🤝](#contribution-🤝)
 
 ### What's Modelzilla? 🦖
 
